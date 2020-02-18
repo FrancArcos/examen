@@ -1,0 +1,101 @@
+body{
+	display: flex;
+}
+
+.contenedor{
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	width: 60%;
+	background: #BCFEEB;
+	padding: 10px;
+}
+
+.principal{
+	background: #0CB1BF;
+	padding: 10px;
+}
+
+.header{
+	display: flex;
+}
+
+.nombre{
+	margin-left: 40px;
+	width: 100%;
+}
+
+.titulo{
+	color: #0CB1BF;
+}
+
+@keyframes cambia_color{
+	from{
+		background-color: #0CB1BF;
+	}
+	to{
+		background-color: #22EE67;
+	}
+}
+
+@keyframes label-animation{
+	from{
+		transform: rotate(0deg);
+		margin-left: 0;
+	}
+	to{
+		transform: rotate(180deg);
+		margin-left: 85vw;
+	}
+}
+
+@keyframes girar{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 75%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes cambia_colorb{
+	from{
+		background-color: #27FFF5;
+	}
+	to{
+		background-color: #2755FF;
+	}
+}
+
+.principal{
+	animation: cambia_color 2s alternate infinite;
+}
+
+.imagen{
+	animation: girar 4s linear infinite;
+}
+
+.titulo{
+	color: black;
+	animation: cambia_colorb 2s alternate infinite; 
+	animation: slidein 3s alternate infinite;
+}
+
+.lol{
+	animation: slidein 3s;
+}
+
+html{
+	background-color: #CAC4AA;
+}
